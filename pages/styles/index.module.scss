@@ -1,5 +1,4 @@
 .cardContainer{
-    // border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +6,6 @@
 
     @media (max-width: 750px) {
         flex-direction: column;
-        // border: 3px solid white;
         height: auto;
     }
 }

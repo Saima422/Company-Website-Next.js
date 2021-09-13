@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import Head from 'next/head'
-import styles from './styles/raweng.module.scss'
 import Navigation from '../components/Navigation/Navigation'
 import Banner from '../components/Banner/Banner'
 import Footer from '../components/Footer/Footer'
@@ -12,7 +10,7 @@ export default function RawEng({data}) {
   }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
           <title>Raw Eng</title>
       </Head>

@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import Navigation from '../components/Navigation/Navigation'
-import styles from './styles/contentstack.module.scss'
 import Banner from '../components/Banner/Banner'
 import Footer from '../components/Footer/Footer'
 
@@ -12,7 +10,7 @@ export default function Contentstack({data}) {
   }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
           <title>Contentstack</title>
       </Head>

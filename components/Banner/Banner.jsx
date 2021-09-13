@@ -2,8 +2,6 @@ import styles from './Banner.module.scss'
 
 export default function Banner({data}){
 
-    // console.log(data);
-
     return (
 
         <div className={styles.container} style={{backgroundImage: `url(${data.imageUrl})`}}> 

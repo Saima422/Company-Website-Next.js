@@ -1,7 +1,5 @@
 import Link from 'next/link'
 import styles from './Navigation.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {IoReorderThree} from "react-icons/io5";
 
 function Navigation({ links, logo, navStyles }){
 
