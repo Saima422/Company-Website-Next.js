@@ -6,6 +6,21 @@
     color: white;
     // height: 300px;
 
+    @media (max-width: 1350px) {
+        margin: 20px;
+    }
+
+    @media (max-width: 990px) {
+        margin: 10px;
+    }
+
+    @media (max-width: 420px) {
+        // flex-direction: column;
+        margin: 10px 0px;
+        width: 95%;
+    }
+
+
     .logoContainer{
         width: 90%;
         margin: 40px auto 20px;

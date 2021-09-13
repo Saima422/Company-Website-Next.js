@@ -1,7 +1,5 @@
 import Head from 'next/head'
-// import Link from 'next/link'
 import Navigation from '../components/Navigation/Navigation'
-// import Banner from '../components/Banner/Banner'
 import Card from '../components/Card/Card'
 import styles from "./styles/index.module.scss"
 import Footer from '../components/Footer/Footer'
@@ -9,8 +7,6 @@ import Footer from '../components/Footer/Footer'
 // https://saima422.github.io/Image-JSON-Data-Repo/json-data/company-data.json
 
 export default function Home({data}) {
-
-  // console.log(data);
   const navStyles={
     color: "#6C5E55",
   }
@@ -38,7 +34,7 @@ export default function Home({data}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://saima422.github.io/Image-JSON-Data-Repo/json-data/company-data.json');
   const data = await res.json();
 

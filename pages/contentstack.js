@@ -19,17 +19,11 @@ export default function Contentstack({data}) {
       <Navigation links={data.CS.navLinks} logo={data.CS.logo} navStyles={navStyles}/>
       <Banner data={data.CS.mainContent}/>
       <Footer data={data.CS.footerData} footerStyles={navStyles}/>
-      {/* <h1>Contentstack</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2> */}
     </div>
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://saima422.github.io/Image-JSON-Data-Repo/json-data/company-data.json');
   const data = await res.json();
 

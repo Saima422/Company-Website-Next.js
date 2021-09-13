@@ -19,17 +19,11 @@ export default function Surfboard({data}) {
       <Navigation links={data.SB.navLinks} logo={data.SB.logo} navStyles={navStyles}/>
       <Banner data={data.SB.mainContent}/>
       <Footer data={data.SB.footerData} footerStyles={navStyles}/>
-      {/* <h1>Surfboard</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2> */}
     </div>
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://saima422.github.io/Image-JSON-Data-Repo/json-data/company-data.json');
   const data = await res.json();
 

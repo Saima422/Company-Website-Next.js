@@ -19,11 +19,21 @@
 }
 
 .hidden{
-    display: none;    
+    display: none;  
+    width: 30px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media (max-width: 650px) {
+        display: unset;
+        margin-right: 20px;
+    }
 }
 
 .logoContainer{
-    // border: 2px solid green;
     margin-left: -10px;
     width: 220px;
     height: 72px;
@@ -32,14 +42,22 @@
     padding: 5px 5px;
     height: 100%;
     width: 100%;
-    // border: 2px solid red;
 }
 
 .navContainer{
+    // border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 35vw;
+
+    @media (max-width: 900px) {
+        width: 50vw;
+    }
+
+    @media (max-width: 650px) {
+        display: none;
+    }
 }
 
 .navItem{
@@ -65,3 +83,30 @@
     background-color: #E84B53;
     color:white;
 }
+
+@media (max-width: 576px) {
+
+    .hamburger-menu {
+      display: unset;
+    }
+
+    .nav-text{
+      padding: 20px 0;
+    }
+
+    .nav-container {
+      display: none;
+    }
+
+    .open-nav {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    .open-nav .nav-item {
+      margin-top: 5px;
+    }
+    
+  };

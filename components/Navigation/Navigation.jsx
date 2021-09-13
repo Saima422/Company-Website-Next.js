@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from './Navigation.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {IoReorderThree} from "react-icons/io5";
 
 function Navigation({ links, logo, navStyles }){
 
@@ -14,7 +16,8 @@ function Navigation({ links, logo, navStyles }){
                     ))
                 }
             </ul>
-            <div className={styles.hidden}><i className="fa fa-bars fa-2x humburger"></i></div>
+            <div className={styles.hidden}><img src="https://saima422.github.io/Image-JSON-Data-Repo/images/menu-black.png" alt="hamburger-menu" /></div>
+
         </div>
         </header>
     )      
