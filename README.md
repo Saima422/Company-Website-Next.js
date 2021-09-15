@@ -4,7 +4,7 @@ A simple company application where based on the selected company card the user i
 
 ## Introduction
 
-A simple frontend for Company Website created with Next JS. Built with an aim to learn and implement creation of a NextJS Frontend, Routing and Server Side Rendering. Application supports functionalities of routng to variour company pages.
+A simple frontend for Company Website created with Next JS. Built with an aim to learn and implement creation of a NextJS Frontend, Routing and Server Side Rendering. Application supports functionalities of routing to various company pages.
 
 ## Getting Started
 
