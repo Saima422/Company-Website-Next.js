@@ -6,7 +6,8 @@ import Footer from '../components/Footer/Footer'
 export default function RawEng({data}) {
 
   const navStyles={
-    color: "#372812",
+    // color: "#372812",
+    color: "#000000",
   }
 
   return (

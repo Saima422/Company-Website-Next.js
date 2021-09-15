@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss=false;
 
 function Footer({data, footerStyles}){
 
@@ -14,7 +17,7 @@ function Footer({data, footerStyles}){
                 <h4>{data.copyrightInfo}</h4>
             </div>
             <div className={styles.contact} style={{backgroundColor: `${footerStyles.color}`}}>
-                <h3>Useful Links</h3>
+                <h3>Links</h3>
                 <ul className={styles.links}>
                     {
                         data.links.map((item)=>(
@@ -24,7 +27,7 @@ function Footer({data, footerStyles}){
                 </ul>
                 <h3>Connect with Us</h3>
                 <div className={styles.socialIcons}>
-                <FontAwesomeIcon icon={faFacebookSquare} size='2x' className={styles.icon}/>
+                <FontAwesomeIcon icon={faFacebookSquare} size='2x'className={styles.icon}/>
                 <FontAwesomeIcon icon={faInstagramSquare} size='2x' className={styles.icon}/>
                 <FontAwesomeIcon icon={faTwitterSquare} size='2x' className={styles.icon}/>
                 <FontAwesomeIcon icon={faLinkedin} size='2x' className={styles.icon}/>

@@ -82,29 +82,3 @@
     color:white;
 }
 
-@media (max-width: 576px) {
-
-    .hamburger-menu {
-      display: unset;
-    }
-
-    .nav-text{
-      padding: 20px 0;
-    }
-
-    .nav-container {
-      display: none;
-    }
-
-    .open-nav {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  
-    .open-nav .nav-item {
-      margin-top: 5px;
-    }
-    
-  };
